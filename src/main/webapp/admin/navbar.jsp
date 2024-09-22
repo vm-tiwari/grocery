@@ -33,7 +33,7 @@
             <c:if test="${not empty userobj }">
 				<a  class="btn btn-success text-white"><i
 					class="fa-solid fa-user"></i> ${userobj.name }</a>
-				<a data-toggle="modal" data-target="#exampleModal"
+				<a href="../logout" data-toggle="modal" data-target="#exampleModal"
 					class="btn btn-secondary"><i
 					class="fa-solid fa-right-from-bracket"></i> Logout</a>
 			</c:if>

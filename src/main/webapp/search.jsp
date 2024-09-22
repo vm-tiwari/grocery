@@ -1,67 +1,45 @@
-
-
 <%@page import="com.entity.product_dtls"%>
 <%@page import="java.util.List"%>
 <%@page import="com.DB.DBConnect"%>
 <%@page import="com.DAO.ProductDAOImpl"%>
 <%@page import="com.entity.User"%>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-
-<style type="text/css"> 
-.crd-ho:hover { 
-   background: linear-gradient(to top, #87CEEB, #fff); /* Light blue to white gradient */ 
-  color: #fff; 
-  
-} 
-.productimg{ 
-transition:ease 0.8s; 
-} 
-.productimg:hover { 
-    transform:scale(1.2); /* Light blue to white gradient */ 
-  color: #fff; 
-   
-} 
-.crd-ho{ 
-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3); 
-} 
-</style>
+<title>Search page</title>
 <%@include file="All_component/all_css.jsp"%>
 </head>
 <body>
  <%@include file="All_component/navbar.jsp"%>
 
 
-
-
-
 <% 
  User u = (User) session.getAttribute("userobj"); 
  %> 
  
- 
+
  <%@include file="All_component/navbar.jsp"%> 
 
- <div class="container-fluid" style="margin-top:150px;"> 
+ <div class="container-fluid" style="margin-top:140px;"> 
   <div class="row ml-4"> 
  
  
-   <% 
-   ProductDAOImpl dao2 = new ProductDAOImpl(DBConnect.getConn()); 
-   List<product_dtls> list2 = dao2.getAllpackagefood(); 
-   for (product_dtls b : list2) { 
+   <%  
+   String ch=request.getParameter("ch");
+   ProductDAOImpl dao = new ProductDAOImpl(DBConnect.getConn()); 
+   List<product_dtls> list = dao.getProductBySearch(ch); 
+   for (product_dtls b : list) { 
    %> 
-   <div class="col-md-3 mt-2"> 
+   <div class="col-md-3"> 
     <div class="card border-secondary mb-3 crd-ho" 
      style="max-width: 18rem;"> 
  
      <div class="card-body text-dark text-center"> 
-      <img alt="" class="productimg" src="product/<%=b.getProduct_photo() %>"  
+      <img alt="" class="productimg" src="product/<%=b.getProduct_photo() %>" 
        style="width: 80px; height: 120px;" class="img-thumblin"> 
       <h6 class="mt-4"><%=b.getProduct_name()%></h6> 
       <h6> 
@@ -92,14 +70,9 @@ box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
        } 
        %> 
  
+
  
- 
- 
- 
- 
- 
- 
-       <a href="view_product.jsp?bid=<%=b.getProduct_Id()%>" class="btn btn-info btn-sm ml-1">View</a> <a href="" 
+       <a href="view_product.jsp?pid=<%=b.getProduct_Id()%>" class="btn btn-info btn-sm ml-1">View</a> <a href="" 
         class="btn btn-success btn-sm ml-1"><i 
         class="fa-solid fa-rupee-sign"></i>.<%=b.getProduct_price()%></a> 
       </div> 

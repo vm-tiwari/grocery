@@ -50,7 +50,7 @@
 								<label for="exampleInputEmail1" class="form-label">
 									Name*</label> <input type="text" class="form-control"
 									id="exampleInputEmail1" aria-describedby="emailHelp"
-									required="required" name="fname" value="${userobj.name }">
+									required="required" name="name" value="${userobj.name }">
 
 							</div>
 
@@ -66,7 +66,7 @@
 								<label for="exampleInputEmail1" class="form-label">Phone
 									No*</label> <input type="number" class="form-control"
 									id="exampleInputEmail1" aria-describedby="emailHelp"
-									required="required" name="phno" value="${userobj.phone }">
+									required="required" name="phone" value="${userobj.phone }">
 
 							</div>
 

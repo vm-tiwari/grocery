@@ -270,7 +270,7 @@ public class ProductDAOImpl implements ProductDAO {
 			ps.setString(1, "Packaged Food");
 			ResultSet rs = ps.executeQuery();
 			int i=1;
-			while (rs.next() && i<= 5) {
+			while (rs.next() && i<= 4) {
 				b = new product_dtls();
 				b.setProduct_Id(rs.getInt(1));
 				b.setProduct_name(rs.getString(2));
@@ -299,7 +299,7 @@ public class ProductDAOImpl implements ProductDAO {
 			ps.setString(1, "staples");
 			ResultSet rs = ps.executeQuery();
 			int i=1;
-			while (rs.next() && i<=5) {
+			while (rs.next() && i<=4) {
 				b = new product_dtls();
 				b.setProduct_Id(rs.getInt(1));
 				b.setProduct_name(rs.getString(2));
@@ -316,7 +316,37 @@ public class ProductDAOImpl implements ProductDAO {
 		return list;
 	}
 	
-	
+	@Override
+	public List<product_dtls> getProductBySearch(String ch) {
+		List<product_dtls> list = new ArrayList<product_dtls>();
+		product_dtls b=null;
+	    
+	    try {
+	      String sql = "select * from product  where product_name like ? ";
+
+	      PreparedStatement ps = conn.prepareStatement(sql);
+	      ps.setString(1, "%"+ch+"%");
+	      
+	      ResultSet rs = ps.executeQuery();
+
+	      while (rs.next()) {
+	        b = new product_dtls();
+	        b.setProduct_Id(rs.getInt(1));
+	        b.setProduct_name(rs.getString(2));
+	        b.setProduct_price(rs.getString(3));
+	        b.setProduct_Category(rs.getString(4));
+	        b.setProduct_brand(rs.getString(5));
+	        b.setProduct_photo(rs.getString(6));
+	        list.add(b);
+
+	      }
+	  
+	      
+	    } catch (Exception e) {
+	      e.printStackTrace();
+	    }
+	    return list;
+	}
 	
 	
 	

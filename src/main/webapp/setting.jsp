@@ -58,12 +58,12 @@
 			</div>
 
 			<div class="col-md-4">
-				<a href="Helpline.jsp" class="text-dark">
+				<a href="contact_us.jsp" class="text-dark">
 					<div class="card border-secondary mb-3 crd-ho"
 						style="max-width: 18rem;">
 						<div class="card-body text-center">
 							<i class="fa-solid fa-circle-user fa-5x text-dark"></i><br><br>
-							<h4>Help Center</h4>
+							<h4>Feedback</h4>
 							
 						</div>
 					</div>

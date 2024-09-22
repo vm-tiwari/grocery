@@ -11,6 +11,24 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style type="text/css"> 
+.crd-ho:hover { 
+   background: linear-gradient(to top, #87CEEB, #fff); /* Light blue to white gradient */ 
+  color: #fff; 
+  
+} 
+.productimg{ 
+transition:ease 0.8s; 
+} 
+.productimg:hover { 
+    transform:scale(1.2); /* Light blue to white gradient */ 
+  color: #fff; 
+   
+} 
+.crd-ho{ 
+box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3); 
+} 
+</style>
 <%@include file="All_component/all_css.jsp"%>
 </head>
 <body>

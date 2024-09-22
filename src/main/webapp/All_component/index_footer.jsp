@@ -46,10 +46,7 @@
             <i class="fas fa-gem me-3"></i>Company name
           </h6>
           <p>
-           Experience unparalleled convenience at our top-tier grocery shop, offering a diverse range 
-           of fresh produce, pantry staples,
-            and exceptional service in a welcoming environment.
-            Your ultimate shopping destination.
+           ONLINE GROCERY SHOP
           </p>
         </div>
         <!-- Grid column 1 -->
@@ -58,19 +55,19 @@
         <div class="col-md-3 mx-auto mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">
-            Products
+            Category
           </h6>
           <p>
-            <a href="#!" class="text-reset" style="color: white;">Biscuits</a>
+            <a href="#!" class="text-reset" style="color: white;">Staples</a>
           </p>
           <p>
-            <a href="#!" class="text-reset" style="color: white;">Oils</a>
+            <a href="#!" class="text-reset" style="color: white;">Snacks & Beverages</a>
           </p>
           <p>
-            <a href="#!" class="text-reset" style="color: white;">Sauces</a>
+            <a href="#!" class="text-reset" style="color: white;">Packaged Food</a>
           </p>
           <p>
-            <a href="#!" class="text-reset" style="color: white;">Etc.</a>
+            <a href="#!" class="text-reset" style="color: white;">Household Care</a>
           </p>
         </div>
         <!-- Grid column 2 -->
@@ -81,18 +78,14 @@
           <h6 class="text-uppercase fw-bold mb-4">
             Useful links
           </h6>
+          
           <p>
-            <a href="#!" class="text-reset" style="color: white;">Pricing</a>
+          <a class="nav-link active" aria-current="page" href="Aboutus.jsp" style="color: #FFFFFF;">About us</a>
           </p>
           <p>
-            <a href="#!" class="text-reset" style="color: white;">Settings</a>
+            <a class="nav-link active" aria-current="page" href="contact_us.jsp" style="color: #FFFFFF;">Feedback</a>
           </p>
-          <p>
-            <a href="#!" class="text-reset" style="color: white;">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset" style="color: white;">Help</a>
-          </p>
+          
         </div>
         <!-- Grid column 3 -->
 

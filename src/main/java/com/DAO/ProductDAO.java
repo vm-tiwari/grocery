@@ -29,7 +29,8 @@ public interface ProductDAO {
 	public List<product_dtls> getpackagefood();
 	
 	
-	
+	public List<product_dtls> getProductBySearch(String ch);
+
 	
 
 

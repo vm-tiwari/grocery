@@ -268,18 +268,18 @@
 													<label>Name :
 														&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input
 														type="text" name="username" value="<%=u.getName()%>"
-														required><br>
+														><br>
 													<div class="md-4 mt-3">
 														<label>Mobile No. : &nbsp;&nbsp;&nbsp;</label><input
 															type="number" name="phno" value="<%=u.getPhone()%>"
-															required>
+															>
 													</div>
 													<br>
 													<div class="md-4">
 														<label>Email :
 															&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input
 															type="email" name="email" value="<%=u.getEmail()%>"
-															required>
+															>
 													</div>
 
 													<div class="md-4 mt-4 text-center">
@@ -316,7 +316,7 @@
 													<label for="cardNumber">Card Number:
 														&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label> <input
 														type="text" id="cardNumber" name="cardNumber"
-														placeholder="**** **** **** ****" class="cd" pattern="[4-8]\d{3}\d{4}\d{4}\d{4}"><br>
+														placeholder="**** **** **** ****" class="cd" pattern="[4-7][0-9]{15}"><br>
 													<div class="md-4 mt-3">
 														<label for="cardName">Cardholder Name:&nbsp;</label> <input
 															type="text" id="cardName" class="cd"name="cardName" >
@@ -326,7 +326,7 @@
 														<label for="expirationDate">Expiration Date
 															:&nbsp;&nbsp;&nbsp;&nbsp;</label> <input type="text"
 															id="expirationDate" class="cd"name="expirationDate"
-															placeholder="MM/YY" pattern="(0[1-9]|1[0-2])/(2[2-9]|1[3-9]|[3-9]\d)">
+															placeholder="MM/YY" pattern="(0[1-9]|1[0-9])/(2[2-9]|1[3-9]|[3-9]\d)">
 													</div>
 													<br>
 													<div class="md-4">

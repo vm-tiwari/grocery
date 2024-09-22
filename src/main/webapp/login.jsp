@@ -148,7 +148,7 @@ body {
             <button class="btn mt-3">Login</button>
         </form>
         <div class="text-center fs-6">
-            <a href="#">Forget password?</a> or <a href="#">register</a>
+            <a href="forgotPassword.jsp">Forget password?</a> or <a href="#">register</a>
         </div>
     </div>
     <div class="">

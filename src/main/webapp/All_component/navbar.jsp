@@ -25,13 +25,14 @@
             <div class="col-md-4 ml-3">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.jsp" style="color: #FFFFFF;">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="Aboutus.jsp" style="color: #FFFFFF;">About us</a></li>
                 
             </ul>
             
             </div>
-            <div class="col-md-4">
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <div class="col-md-4" >
+            <form class="d-flex" action="search.jsp" method="post">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="ch">
                 <button class="btn btn-outline-primary" type="submit" style="color: #FFFFFF; border-color: #FFFFFF;">Search</button>
             </form>
             </div>
